@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+    <META http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>회원가입</title>
+    <style>
+        body { background:#f8f8f8; }
+        .signup-box {
+            width:350px; margin:100px auto; background:#fff;
+            border-radius:10px; box-shadow:0 4px 16px rgba(0,0,0,0.12);
+            padding:30px 40px 20px 40px; text-align:center;
+        }
+        .signup-box h1 { color:#43a047; margin-bottom:30px; }
+        .signup-box input { width:90%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:5px; font-size:16px; }
+        .signup-box button { width:100%; padding:12px; margin:12px 0 0 0; background:#43a047; color:#fff; border:none; border-radius:5px; font-size:17px; cursor:pointer; }
+    </style>
+</HEAD>
+<BODY>
+    <div class="signup-box">
+        <h1>회원가입</h1>
+        <form method="post" action="signup_process.php">
+            ID(숫자): <input type="text" name="customer_id" required><br>
+            닉네임: <input type="text" name="nickname" required><br>
+            비밀번호: <input type="password" name="password" required><br>
+            이메일: <input type="email" name="email" required><br>
+            <button type="submit">가입하기</button>
+        </form>
+        <br>
+        <A HREF='main.php'>← 초기 화면</A>
+    </div>
+</BODY>
+</HTML>
